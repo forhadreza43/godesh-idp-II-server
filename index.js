@@ -15,7 +15,7 @@ import storyRoutes from "./routes/storyRoutes.js";
 // import guideApplicationRoutes from "./routes/guideApplicationRoutes.js";
 
 // // Import controllers for root-level routes
-import { getRandomPackages } from "./controllers/packageController.js";
+// import { getRandomPackages } from "./controllers/packageController.js";
 
 const port = process.env.PORT || 5000;
 const app = express();
@@ -37,7 +37,7 @@ app.use(
 // app.use("/", authRoutes);
 app.use("/users", userRoutes);
 app.use("/packages", packageRoutes);
-app.get("/random-packages", getRandomPackages); // Backward compatibility - root level
+// app.get("/random-packages", getRandomPackages); // Backward compatibility - root level
 app.use("/stories", storyRoutes);
 // app.use("/bookings", bookingRoutes);
 // app.use("/", paymentRoutes);
