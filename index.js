@@ -11,7 +11,7 @@ import packageRoutes from "./routes/packageRoutes.js";
 import storyRoutes from "./routes/storyRoutes.js";
 import bookingRoutes from "./routes/bookingRoutes.js";
 import paymentRoutes from "./routes/paymentRoutes.js";
-// import adminRoutes from "./routes/adminRoutes.js";
+import adminRoutes from "./routes/adminRoutes.js";
 import guideApplicationRoutes from "./routes/guideApplicationRoutes.js";
 
 // // Import controllers for root-level routes
@@ -41,7 +41,7 @@ app.use("/packages", packageRoutes);
 app.use("/stories", storyRoutes);
 app.use("/bookings", bookingRoutes);
 app.use("/", paymentRoutes);
-// app.use("/admin", adminRoutes);
+app.use("/admin", adminRoutes);
 app.use("/guide-applications", guideApplicationRoutes);
 
 // Root route
