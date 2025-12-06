@@ -5,7 +5,7 @@ import cookieParser from "cookie-parser";
 import { connectDB } from "./config/database.js";
 
 // Import routes
-// import authRoutes from "./routes/authRoutes.js";
+import authRoutes from "./routes/authRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 import packageRoutes from "./routes/packageRoutes.js";
 import storyRoutes from "./routes/storyRoutes.js";
@@ -34,7 +34,7 @@ app.use(
 );
 
 // Routes
-// app.use("/", authRoutes);
+app.use("/", authRoutes);
 app.use("/users", userRoutes);
 app.use("/packages", packageRoutes);
 // app.get("/random-packages", getRandomPackages); // Backward compatibility - root level
